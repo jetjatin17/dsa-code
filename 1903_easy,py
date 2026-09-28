@@ -1,0 +1,13 @@
+str = "9702"
+
+l = len(str)
+n = 0
+for i in range (l-1,-1,-1):
+    if (int(str[i])%2==0):
+        n+=1
+    else:
+        break
+if n==0:
+    print(str)
+else:
+    print(str[:-n])
